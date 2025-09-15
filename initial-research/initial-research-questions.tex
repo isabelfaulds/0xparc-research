@@ -1,0 +1,34 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+
+\title{0xParc Compiled Initial Research, Questions}
+\author{Volodymyr Borshch, Isabel Faulds, Isis Martinez, Abtin Olaee,\\ Jeremie Park, Vincent Pangilinan, Aroonrassamee Wongkeaitaroon}
+\date{September 2025}
+
+\begin{document}
+
+\maketitle
+
+\section{Two Party Computation}
+\section{SNARKs}
+
+\subsection*{Notes}
+\begin{itemize}
+\item AW: SNARKS are a way for a prover to prove to a verifier that some computation has been performed correctly without the verifier having to do the computation and without revealing information.
+\item IM: Arithmetization convers computation into large system of algebraic equations. The proof is then compressed into a verifiable package leveraging polynomial commitments like KZG built on elliptic curves. Fiat-Shamir heuristic removes the need for back-and-forth interaction.
+\item IF: The prover creates commitments of A, B, C witness polynomials that are binding to their values. These fill the coefficients of the gate constraint check of PLONK. The Fiat-Shamir heuristic sends random challenges that give a high confidence of validation.
+\end{itemize}
+
+
+\subsection*{Questions}
+\begin{itemize}
+\item IM: Bilinear pairings on elliptic curves allow for multiplication check on encrypted values not intuitive
+\item AW: Didn't understand Fiat-Shamir constraint or steps of arithmetization
+\item IF: Unclear how polynomial commitment process works to open values of elliptic curve points
+\end{itemize}
+
+\section{Fully Homorphic Encryption}
+
+\section{Oblivious RAM}
+
+\end{document}
